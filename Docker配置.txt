@@ -1,0 +1,9 @@
+1:安装docker
+2：docker pull *
+3;docker images
+4:打开redis
+	docker run --name myredis 
+		-p 6379:6379 -d redis redis-server --appendonly yes
+
+  进入：
+	docker exec -it a8c2f4322c90  redis-cli
